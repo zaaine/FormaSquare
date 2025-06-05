@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environnement
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Fichiers de build
+dist/
+build/
+.next/
+out/
+
+# Cache
+.npm
+.eslintcache
+.yarn-integrity
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Système
+.DS_Store
+*.swp
+.thumbs.db
+
+# IDE/Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

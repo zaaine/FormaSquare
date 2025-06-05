@@ -1,0 +1,27 @@
+{
+  "name": "formasquare",
+  "version": "1.0.0",
+  "description": "Site vitrine d'une entreprise en ligne",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildTW": "tailwindcss -i ./styles/source.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaaine/FormaSquare.git"
+  },
+  "keywords": [
+    "92230486"
+  ],
+  "author": "aziz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaaine/FormaSquare/issues"
+  },
+  "homepage": "https://github.com/zaaine/FormaSquare#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8"
+  }
+}
