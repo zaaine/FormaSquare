@@ -19,14 +19,14 @@
               <img src="/styles/img/RocketLogo.svg" alt="logo" class="w-10" />
             </a>
             <button
-              class="bg-white rounded-md p-2 border border-gray-800 cursor-pointer laptop-nav:hidden"
+              class="icone-toggle bg-white rounded-md p-2 border border-gray-800 cursor-pointer laptop-nav:hidden"
             >
               <img src="/styles/img/menu.svg" alt="show links" class="w-6" />
             </button>
           </div>
 
           <ul
-            class="hidden laptop-nav:flex items-center gap-4 pt-2 laptop-nav:pt-0 mb-6 laptop-nav:mb-0 bg-gray-50 laptop-nav:bg-transparent flex-col laptop-nav:flex-row laptop-nav:justify-center"
+            class="toggle-menu hidden laptop-nav:flex items-center gap-4 pt-2 laptop-nav:pt-0 mb-6 laptop-nav:mb-0 bg-gray-50 laptop-nav:bg-transparent flex-col laptop-nav:flex-row laptop-nav:justify-center text-center"
           >
             <li>
               <a
@@ -59,7 +59,7 @@
           </ul>
 
           <div
-            class="w-14 group relative hidden laptop-nav:flex justify-end cursor-pointer"
+            class="group relative laptop-nav:flex cursor-pointer toggle-menu hidden justify-center items-center mt-6 md:mt-0 md:justify-end md:flex"
           >
             <img src="/styles/img/user.svg" alt="user icon" class="w-7" />
             <div
@@ -70,13 +70,17 @@
                   <a
                     href="#"
                     class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
-                  > Sign in  </a>
+                  >
+                    Sign in
+                  </a>
                 </li>
                 <li class="mb-3">
                   <a
                     href="#"
                     class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
-                  > Sign up </a>
+                  >
+                    Sign up
+                  </a>
                 </li>
               </ul>
             </div>
@@ -85,4 +89,5 @@
       </div>
     </header>
   </body>
+  <script src="./script.js"></script>
 </html>
