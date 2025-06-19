@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --breakpoint-laptop-nav: 820px;
+  --breakpoint-mobile-nav: 200px;
+  --breakpoint-tablet-nav: 640px;
+  --breakpoint-laptop-nav: 820px;
 }

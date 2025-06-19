@@ -19,6 +19,7 @@
               <img src="/styles/img/RocketLogo.svg" alt="logo" class="w-10" />
             </a>
             <button
+              aria-expanded="false"
               class="icone-toggle bg-white rounded-md p-2 border border-gray-800 cursor-pointer laptop-nav:hidden"
             >
               <img src="/styles/img/menu.svg" alt="show links" class="w-6" />
@@ -26,33 +27,33 @@
           </div>
 
           <ul
-            class="toggle-menu hidden laptop-nav:flex items-center gap-4 pt-2 laptop-nav:pt-0 mb-6 laptop-nav:mb-0 bg-gray-50 laptop-nav:bg-transparent flex-col laptop-nav:flex-row laptop-nav:justify-center text-center"
+            class="toggle-menu hidden laptop-nav:flex items-center gap-4 pt-2 laptop-nav:pt-0 laptop-nav:mb-0 bg-gray-50 laptop-nav:bg-transparent flex-col laptop-nav:flex-row laptop-nav:justify-center text-center"
           >
             <li>
               <a
                 href="#home"
-                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900 navbar-link"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="#services"
-                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900 navbar-link"
                 >Services</a
               >
             </li>
             <li>
               <a
                 href="#prices"
-                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900 navbar-link"
                 >Prices</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900"
+                class="font-medium text-[17px] text-zinc-800 hover:text-zinc-900 navbar-link"
                 >Contact</a
               >
             </li>
@@ -61,20 +62,24 @@
           <div
             class="group relative laptop-nav:flex cursor-pointer toggle-menu hidden justify-center items-center mt-6 md:mt-0 md:justify-end md:flex"
           >
-            <img src="/styles/img/user.svg" alt="user icon" class="w-7" />
+            <img
+              src="/styles/img/user.svg"
+              alt="user icon"
+              class="w-7 mobile-nav:hidden laptop-nav:flex"
+            />
             <div
-              class="absolute right-0 top-full pt-6 group-hover:block hidden"
+              class="toggle-menu hidden absolute right-0 top-full pt-6 group-hover:block mobile-nav:hidden"
             >
               <ul class="w-52 bg-white border border-gray-400 p-5 rounded-xl">
                 <li class="mb-3">
                   <a
                     href="#"
-                    class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+                    class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 hover:bg-gray-50 text-center"
                   >
                     Sign in
                   </a>
                 </li>
-                <li class="mb-3">
+                <li>
                   <a
                     href="#"
                     class="block shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
@@ -84,6 +89,23 @@
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div
+            class="laptop-nav:hidden pb-4 gap-3 hidden toggle-menu text-center items-center justify-center space-x-2 m-5"
+          >
+            <a
+              href="#"
+              class="w-28 shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+            >
+              Sign in
+            </a>
+            <a
+              href="#"
+              class="w-28 shadow-md p-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center"
+            >
+              Sign up
+            </a>
           </div>
         </nav>
       </div>

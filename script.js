@@ -5,3 +5,6 @@ const toggleMenu = () =>
   menuElementsToToggle.forEach((el) => el.classList.toggle("hidden"));
 
 iconeToggle.addEventListener("click", toggleMenu);
+
+const navbarLinks = document.querySelectorAll(".navbar-link");
+navbarLinks.forEach((link) => link.addEventListener("click", toggleMenu));
