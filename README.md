@@ -52,7 +52,7 @@ formaSquare/
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-utilisateur/votre-projet.git
+git clone https://github.com/zaaine/FormaSquare.git
 cd votre-projet
 
 ---
