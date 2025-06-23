@@ -4,8 +4,13 @@
   "description": "Site vitrine d'une entreprise en ligne",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "buildTW": "tailwindcss -i ./styles/source.css -o ./dist/output.css --watch"
+    "dev": "concurrently \"npm run dev:tw\" \"npm run dev:ts\"",
+    "dev:tw": "tailwindcss -i ./styles/source.css -o ./dist/output.css --watch",
+    "dev:ts": "tsc --watch",
+    "build": "npm run build:ts && npm run build:tw",
+    "build:tw": "tailwindcss -i ./styles/source.css -o ./dist/output.css --minify",
+    "build:ts": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,6 +27,10 @@
   "homepage": "https://github.com/zaaine/FormaSquare#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.8",
-    "tailwindcss": "^4.1.8"
+    "@types/node": "^24.0.3",
+    "@typescript-eslint/parser": "^8.34.1",
+    "concurrently": "^8.2.2",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
   }
 }
